@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dhiaelhakmokhtari.github.io/sitemap.xml
