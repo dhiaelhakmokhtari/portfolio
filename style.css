@@ -357,8 +357,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   flex-direction: column;
   flex: 1;
 }
-.project-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
-.project-icon { font-size: 1.75rem; }
+.project-header { display: flex; justify-content: flex-end; align-items: flex-start; margin-bottom: 12px; }
 .project-links { display: flex; gap: 10px; }
 .project-link { color: var(--text-muted); font-size: 1rem; transition: color var(--transition); }
 .project-link:hover { color: var(--primary-light); }
