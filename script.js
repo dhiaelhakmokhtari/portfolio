@@ -369,10 +369,7 @@ function openCaseStudy(projectId) {
 
   // Abstract block
   if (data.abstract) {
-    html += `<div class="modal-section">`;
-    html += `<h4 class="modal-section-title">Abstract</h4>`;
-    html += `<p><em>${data.abstract}</em></p>`;
-    html += `</div>`;
+    html += `<div class="modal-abstract">${data.abstract}</div>`;
   }
 
   // Sections
