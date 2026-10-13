@@ -1,0 +1,11 @@
+agy.exe
+agy.exe.*
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
+MOKHTARI_Dhia_Full_Curriculem_ENG.pdf
+MOKHTARI_Dhia_curriculum.pdf
+MOKHTARI_Dhia_PhD_Curriculem_ENG.pdf
+cv-31032026.pdf
+cv-31032026_page-0001.jpg

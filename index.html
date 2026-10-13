@@ -4,34 +4,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dhia Mokhtari — AI & ML Engineer</title>
+  <title>Dhia Mokhtari — Scientific ML &amp; AI Engineer | Open to Opportunities</title>
   <meta name="description"
-    content="Portfolio of Dhia Mokhtari — R&D ML Engineer at IFPEN, Master's student at Paris-Saclay. Specializing in Deep Learning, LLMs, and Multi-Agent Systems." />
-  <meta name="keywords" content="Dhia Mokhtari, Machine Learning, AI, Deep Learning, Portfolio, Python, LLM" />
+    content="Portfolio of Dhia Mokhtari — Scientific ML &amp; AI Engineer. R&amp;D at IFP Energies nouvelles, Master's graduate from Université Paris-Saclay (Ranked 2nd in M2 Autonomous Systems). Specializing in Physics-Guided Neural Networks, Surrogate Modeling, Deep Learning, and Distributed Systems. Open to PhD positions, R&amp;D roles (CDI/CDD), and missions." />
+  <meta name="keywords"
+    content="Dhia Mokhtari, Machine Learning Engineer, Scientific ML, Physics-Guided AI, PINNs, Surrogate Modeling, Deep Learning, PyTorch, Université Paris-Saclay, IFPEN, PhD, CDI, CDD, Data Scientist, Paris" />
   <meta name="author" content="Dhia Mokhtari" />
   <meta name="theme-color" content="#0a0a0f" />
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236366f1'/%3E%3Ctext x='16' y='22' font-family='Inter,sans-serif' font-size='16' font-weight='800' fill='white' text-anchor='middle'%3EDM%3C/text%3E%3C/svg%3E" />
-  <!-- Open Graph -->
-  <meta property="og:title" content="Dhia Mokhtari — AI & ML Engineer" />
+
+  <!-- Canonical & Social Meta -->
+  <link rel="canonical" href="https://dhiaelhakmokhtari.github.io/" />
+  <meta property="og:title" content="Dhia Mokhtari — Scientific ML &amp; AI Engineer" />
   <meta property="og:description"
-    content="R&D ML Engineer specializing in Deep Learning, LLMs, and Autonomous Systems." />
+    content="Scientific ML &amp; AI Engineer with R&amp;D experience at IFPEN and Master's graduate from Université Paris-Saclay (Ranked 2nd in M2). Open to PhD positions, R&amp;D roles (CDI/CDD), and missions." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://dhiaelhakmokhtari.github.io/assets/og-card.png" />
   <meta property="og:url" content="https://dhiaelhakmokhtari.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dhia Mokhtari — AI & ML Engineer" />
+  <meta name="twitter:title" content="Dhia Mokhtari — Scientific ML &amp; AI Engineer" />
   <meta name="twitter:description"
-    content="R&D ML Engineer specializing in Deep Learning, LLMs, and Autonomous Systems." />
+    content="Scientific ML &amp; AI Engineer with R&amp;D experience at IFPEN and Master's graduate from Université Paris-Saclay (Ranked 2nd in M2). Open to PhD positions, R&amp;D roles (CDI/CDD), and missions." />
   <meta name="twitter:image" content="https://dhiaelhakmokhtari.github.io/assets/og-card.png" />
+
+  <!-- Structured Data / JSON-LD for Recruiters & Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dhia Mokhtari",
+    "jobTitle": "Scientific Machine Learning & AI Engineer",
+    "url": "https://dhiaelhakmokhtari.github.io/",
+    "email": "dhiaelhakmokhtari@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Choisy-le-Roi",
+      "addressRegion": "Île-de-France",
+      "addressCountry": "France"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Université Paris-Saclay"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Université d'Alger 1"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Université Batna 2"
+      }
+    ],
+    "knowsAbout": [
+      "Scientific Machine Learning",
+      "Physics-Guided Neural Networks",
+      "Surrogate Modeling",
+      "Deep Learning",
+      "PyTorch",
+      "Distributed Systems",
+      "Multi-Agent Coordination",
+      "Generative AI & LLMs",
+      "Reinforcement Learning"
+    ],
+    "sameAs": [
+      "https://github.com/dhiaelhakmokhtari",
+      "https://www.linkedin.com/in/dhia-mokhtari/"
+    ]
+  }
+  </script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet" />
-  <!-- Icons -->
+
+  <!-- Icons & Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
@@ -40,7 +93,7 @@
 <body>
 
   <!-- ====== PRELOADER ====== -->
-  <div class="preloader" id="preloader">
+  <div class="preloader" id="preloader" aria-hidden="true">
     <div class="preloader-inner">
       <div class="preloader-logo">DM<span class="dot">.</span></div>
       <div class="preloader-bar">
@@ -49,15 +102,19 @@
     </div>
   </div>
 
-  <!-- ====== CURSOR ====== -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursorFollower"></div>
+  <!-- ====== CUSTOM CURSOR ====== -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
 
-  <!-- ====== NAV ====== -->
+  <!-- ====== NAVBAR ====== -->
   <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo" aria-label="Home">DM<span class="dot">.</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <a href="#hero" class="nav-logo" aria-label="Dhia Mokhtari home">DM<span class="dot">.</span></a>
+      <div class="nav-status-badge">
+        <span class="badge-dot"></span>
+        <span class="nav-status-text">Open to Opportunities · PhD, R&amp;D (CDI/CDD) &amp; Missions</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
@@ -67,688 +124,1004 @@
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#github" class="nav-link">GitHub</a></li>
         <li><a href="#resume" class="nav-link">Resume</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ====== HERO ====== -->
-  <section class="hero" id="hero" aria-label="Introduction">
-    <canvas class="hero-particles" id="heroParticles" aria-hidden="true"></canvas>
-    <div class="hero-bg">
-      <div class="hero-grid"></div>
-      <div class="hero-blob blob-1"></div>
-      <div class="hero-blob blob-2"></div>
-      <div class="hero-blob blob-3"></div>
-    </div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Targeting PhD positions from July 2026
-      </div>
-      <h1 class="hero-title">
-        <span class="hero-greeting">Hi, I'm</span>
-        <span class="hero-name gradient-text">Dhia Mokhtari</span>
-      </h1>
-      <p class="hero-subtitle typewriter" id="typewriter"></p>
-      <p class="hero-desc">
-        R&amp;D ML Engineer at <strong>IFPEN</strong> · Master's student at <strong>Université
-          Paris-Saclay</strong><br />
-        Passionate about Deep Learning, LLMs, and Autonomous Systems.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
-          <i class="fas fa-rocket"></i> View Projects
-        </a>
-        <a href="#contact" class="btn btn-ghost" id="hero-contact-btn">
-          <i class="fas fa-paper-plane"></i> Get in touch
-        </a>
-      </div>
-      <div class="hero-socials">
-        <a href="https://github.com/dhiaelhakmokhtari" target="_blank" rel="noopener" aria-label="GitHub"
-          class="social-icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/dhia-mokhtari/" target="_blank" rel="noopener" aria-label="LinkedIn"
-          class="social-icon">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:dhiaelhakmokhtari@gmail.com" aria-label="Email" class="social-icon">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-    <div class="hero-scroll-hint" aria-hidden="true">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+  <main id="main-content">
 
-  <!-- ====== ABOUT ====== -->
-  <section class="section" id="about" aria-label="About me">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Who I am</span>
-        <h2 class="section-title">About Me</h2>
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <canvas class="hero-particles" id="heroParticles" aria-hidden="true"></canvas>
+      <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-blob blob-1"></div>
+        <div class="hero-blob blob-2"></div>
+        <div class="hero-blob blob-3"></div>
       </div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>
-            I'm a Master's student in <strong>Autonomic Systems</strong> at Université Paris-Saclay and an
-            R&amp;D ML Engineer intern at <strong>IFPEN</strong> (IFP Energies nouvelles), where I'm developing
-            AI surrogate models using PINNs and generative architectures for electric motor mapping prediction.
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Open to Opportunities · PhD Positions, R&amp;D Roles (CDI/CDD) &amp; Missions</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-greeting">Hi, I'm</span>
+          <span class="hero-name gradient-text">Dhia Mokhtari</span>
+        </h1>
+        <p class="hero-subtitle typewriter" id="typewriter" aria-live="polite"></p>
+        <p class="hero-desc">
+          Scientific ML &amp; AI Engineer with R&amp;D experience at <strong>IFP Energies nouvelles (IFPEN)</strong><br />
+          Master's graduate in Autonomous Systems from <strong>Université Paris-Saclay</strong> (Ranked 2nd in M2).<br />
+          Bridging physics simulations, surrogate modeling, and high-performance deep learning architectures.
+        </p>
+
+        <!-- Recruiter Quick-Facts Bar -->
+        <div class="recruiter-quickbar">
+          <div class="quickbar-item">
+            <i class="fas fa-briefcase"></i>
+            <span><strong>Open to:</strong> PhD, R&amp;D Roles (CDI/CDD) &amp; Missions</span>
+          </div>
+          <div class="quickbar-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span><strong>Location:</strong> Paris Area / Île-de-France &middot; Hybrid/Remote</span>
+          </div>
+          <div class="quickbar-item">
+            <i class="fas fa-medal"></i>
+            <span><strong>Paris-Saclay:</strong> Ranked 2nd in M2 (Autonomous Systems)</span>
+          </div>
+          <div class="quickbar-item">
+            <i class="fas fa-language"></i>
+            <span><strong>Languages:</strong> English (C2 &middot; IELTS 7.5) &middot; French (C2) &middot; Arabic (C2)</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
+            <i class="fas fa-layer-group"></i> Explore Projects &amp; Case Studies
+          </a>
+          <a href="MOKHTARI_Dhia_Full_Curriculem_ENG_prvt.pdf" download="Dhia_Mokhtari_Curriculum_Vitae.pdf" class="btn btn-secondary" id="hero-cv-btn">
+            <i class="fas fa-file-pdf"></i> Download CV (PDF)
+          </a>
+          <a href="#contact" class="btn btn-ghost" id="hero-contact-btn">
+            <i class="fas fa-paper-plane"></i> Get in touch
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/dhiaelhakmokhtari" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"
+            class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dhia-mokhtari/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"
+            class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:dhiaelhakmokhtari@gmail.com" aria-label="Send Email" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section class="section" id="about" aria-label="About me">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Professional Profile</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            Scientific Machine Learning Engineer combining mathematical rigor, physical modeling, and scalable software systems.
           </p>
-          <p>
-            My academic and professional journey spans <strong>machine learning</strong>, <strong>deep
-              learning</strong>,
-            <strong>LLM alignment</strong> with Knowledge Graphs, <strong>multi-agent systems</strong>,
-            and <strong>parallel computing</strong>. I'm passionate about bridging cutting-edge research with
-            practical, impactful applications.
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I am a <strong>Scientific Machine Learning &amp; AI Engineer</strong> with industrial R&amp;D experience at
+              <strong>IFP Energies nouvelles (IFPEN)</strong> and graduate of <strong>Université Paris-Saclay</strong>,
+              where I completed my Master's in Computer &amp; Network Systems (Autonomous Systems track) as the
+              <strong>second-ranked student in M2</strong>.
+            </p>
+            <p>
+              At IFPEN, I developed reproducible Python ML pipelines for complex multi-physics engineering prediction,
+              designing <strong>physics-guided neural architectures</strong> and <strong>surrogate models</strong> for
+              electric-motor loss maps. My work focused on Feature-wise Linear Modulation (FiLM), physical constraint formulation,
+              and designing rigorous validation protocols to ensure <strong>robust zero-shot generalization across unseen motor geometries</strong>.
+            </p>
+            <p>
+              My background bridges applied <strong>Deep Learning (PyTorch, Transformers, Computer Vision)</strong>,
+              <strong>Scientific ML (PINNs, surrogate modeling, OOD evaluation)</strong>, and
+              <strong>Systems Engineering (distributed architectures, concurrency in C and Java, Docker, CI/CD)</strong>.
+            </p>
+            <div class="highlight-callout">
+              <div class="callout-icon"><i class="fas fa-bullseye"></i></div>
+              <div class="callout-content">
+                <span class="callout-title">Career Objective &amp; Opportunities:</span>
+                <p class="callout-text">
+                  Actively open to <strong>PhD positions</strong>, <strong>R&amp;D roles (CDI/CDD)</strong>, and <strong>collaborative missions</strong> in Machine Learning, AI, and Scientific ML across France (Paris area, Île-de-France, hybrid) or internationally.
+                </p>
+              </div>
+            </div>
+            <div class="about-tags">
+              <span class="tag"><i class="fas fa-map-marker-alt"></i> Choisy-le-Roi / Paris Area</span>
+              <span class="tag"><i class="fas fa-check-circle"></i> Open to PhD, CDI/CDD &amp; Missions</span>
+              <span class="tag"><i class="fas fa-graduation-cap"></i> Université Paris-Saclay (Ranked 2nd)</span>
+              <span class="tag"><i class="fas fa-flask"></i> IFPEN ML R&amp;D Alum</span>
+              <span class="tag">🇬🇧 C2 English (IELTS 7.5)</span>
+              <span class="tag">🇫🇷 C2 Français</span>
+              <span class="tag">🇩🇿 C2 Arabe</span>
+            </div>
+          </div>
+
+          <div class="about-stats reveal">
+            <div class="stat-card" id="stat-rank">
+              <span class="stat-number stat-badge-text">2nd</span>
+              <span class="stat-label">Rank in M2<br /><small>Paris-Saclay Autonomous Systems</small></span>
+            </div>
+            <div class="stat-card" id="stat-experience">
+              <span class="stat-number" data-target="6">0</span>
+              <span class="stat-label">Months R&amp;D @ IFPEN<br /><small>Scientific ML &amp; Surrogates</small></span>
+            </div>
+            <div class="stat-card" id="stat-repos">
+              <span class="stat-number" data-target="12">0</span>
+              <span class="stat-label">Open Source Repos<br /><small>Reproducible ML &amp; Systems</small></span>
+            </div>
+            <div class="stat-card" id="stat-langs">
+              <span class="stat-number" data-target="3">0</span>
+              <span class="stat-label">Fluent Languages<br /><small>Trilingual C2 (EN, FR, AR)</small></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Three Recruiter Pillars -->
+        <div class="pillars-grid reveal">
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fas fa-wave-square"></i></div>
+            <h3>Physics-Guided &amp; Scientific ML</h3>
+            <p>
+              Surrogate modeling, PINNs, FiLM conditioning, and engineering constraint integration that accelerate expensive FEM simulations by orders of magnitude while preserving physical consistency.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fas fa-vial"></i></div>
+            <h3>Methodological &amp; Experimental Rigor</h3>
+            <p>
+              Systematic quantitative model comparison, out-of-distribution (OOD) testing on unseen geometries, error analysis, reproducible pipelines, and seed-synchronized benchmarks.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>Software &amp; Systems Engineering</h3>
+            <p>
+              Robust computer science foundation: Python, PyTorch, C (OpenMP parallel computing), Java (distributed actors), Docker containerization, CI/CD, and clean modular codebases.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====== SKILLS ====== -->
+    <section class="section section-dark" id="skills" aria-label="Skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills &amp; Technology Stack</h2>
+          <p class="section-subtitle">
+            Categorized according to professional software and machine learning engineering standards.
           </p>
-          <p>
-            My primary goal is to secure a <strong>PhD position starting July 2026</strong>, though I remain open to exciting
-            <strong>R&amp;D roles (CDI/CDD)</strong> or <strong>missions</strong>.
+        </div>
+        <div class="skills-grid">
+
+          <!-- 1. Scientific ML -->
+          <div class="skill-group reveal">
+            <div class="skill-group-icon"><i class="fas fa-atom"></i></div>
+            <h3>Scientific ML &amp; Surrogate Modeling</h3>
+            <div class="skill-pills">
+              <span class="pill pill-featured">Physics-Guided Neural Networks (PINNs)</span>
+              <span class="pill pill-featured">Surrogate Modeling</span>
+              <span class="pill">FiLM Conditioning</span>
+              <span class="pill">Geometric Generalization</span>
+              <span class="pill">Out-of-Distribution (OOD) Analysis</span>
+              <span class="pill">Experimental Data Curation</span>
+              <span class="pill">Multi-Physics Constraints</span>
+            </div>
+          </div>
+
+          <!-- 2. ML & Deep Learning -->
+          <div class="skill-group reveal">
+            <div class="skill-group-icon"><i class="fas fa-brain"></i></div>
+            <h3>Machine Learning &amp; Deep Learning</h3>
+            <div class="skill-pills">
+              <span class="pill pill-python">Python</span>
+              <span class="pill pill-pytorch">PyTorch</span>
+              <span class="pill">Scikit-Learn</span>
+              <span class="pill">TensorFlow / Keras</span>
+              <span class="pill">Hugging Face Transformers</span>
+              <span class="pill">Computer Vision (Mask R-CNN, CNNs)</span>
+              <span class="pill">Audio Transformers (SSAST, SpecAugment)</span>
+              <span class="pill">Representation Learning</span>
+              <span class="pill">XGBoost &amp; Random Forest</span>
+            </div>
+          </div>
+
+          <!-- 3. GenAI & LLMs -->
+          <div class="skill-group reveal">
+            <div class="skill-group-icon"><i class="fas fa-diagram-project"></i></div>
+            <h3>Generative AI, LLMs &amp; Knowledge Graphs</h3>
+            <div class="skill-pills">
+              <span class="pill pill-featured">LangChain &amp; LangGraph</span>
+              <span class="pill pill-featured">Knowledge Graphs (Neo4j)</span>
+              <span class="pill">Graph-RAG Pipelines</span>
+              <span class="pill">Vector Embeddings (ChromaDB)</span>
+              <span class="pill">Ollama &amp; Local Inference</span>
+              <span class="pill">Pydantic Schema Validation</span>
+              <span class="pill">Hallucination Mitigation</span>
+            </div>
+          </div>
+
+          <!-- 4. Optimization & Reinforcement Learning -->
+          <div class="skill-group reveal">
+            <div class="skill-group-icon"><i class="fas fa-gamepad"></i></div>
+            <h3>Optimization &amp; Autonomous Systems</h3>
+            <div class="skill-pills">
+              <span class="pill">Multi-Objective Optimization (18/20)</span>
+              <span class="pill">Reinforcement Learning (Gymnasium)</span>
+              <span class="pill">Q-Learning &amp; SARSA</span>
+              <span class="pill">Multi-Agent Systems (MAS)</span>
+              <span class="pill">Evolutionary Game Theory</span>
+              <span class="pill">Hierarchical State Machines (HSMs)</span>
+              <span class="pill">Operations Research &amp; Linear Programming</span>
+            </div>
+          </div>
+
+          <!-- 5. Data Processing & Big Data -->
+          <div class="skill-group reveal">
+            <div class="skill-group-icon"><i class="fas fa-database"></i></div>
+            <h3>Data Processing &amp; Big Data</h3>
+            <div class="skill-pills">
+              <span class="pill">Pandas</span>
+              <span class="pill">NumPy &amp; SciPy</span>
+              <span class="pill">Apache Spark</span>
+              <span class="pill">SQL &amp; MySQL</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">ETL Pipeline Design</span>
+              <span class="pill">Data Quality Control</span>
+              <span class="pill">Dash &amp; Streamlit</span>
+            </div>
+          </div>
+
+          <!-- 6. Software Engineering & MLOps -->
+          <div class="skill-group reveal">
+            <div class="skill-group-icon"><i class="fas fa-server"></i></div>
+            <h3>Software Engineering &amp; MLOps</h3>
+            <div class="skill-pills">
+              <span class="pill">Docker &amp; Containers</span>
+              <span class="pill">Git &amp; GitHub Actions (CI/CD)</span>
+              <span class="pill">Linux / Bash Scripting</span>
+              <span class="pill">MLflow Experiment Tracking</span>
+              <span class="pill">C (OpenMP, Parallelism, HPC)</span>
+              <span class="pill">Java (Processing, Concurrency)</span>
+              <span class="pill">Modular Architecture &amp; Unit Testing</span>
+              <span class="pill">gRPC &amp; REST APIs</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== EXPERIENCE ====== -->
+    <section class="section" id="experience" aria-label="Work experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career &amp; Academics</span>
+          <h2 class="section-title">Experience &amp; Education</h2>
+          <p class="section-subtitle">
+            Demonstrated progression across industrial R&amp;D, prestigious graduate studies, and computer science engineering.
           </p>
-          <div class="about-tags">
-            <span class="tag">🎓 Paris-Saclay</span>
-            <span class="tag">📍 Île-de-France</span>
-            <span class="tag">🇬🇧 C2 English</span>
-            <span class="tag">🇫🇷 C2 French</span>
-            <span class="tag">🇩🇿 C2 Arabic</span>
-          </div>
         </div>
-        <div class="about-stats reveal">
-          <div class="stat-card" id="stat-repos">
-            <span class="stat-number" data-target="12">0</span>
-            <span class="stat-label">GitHub Repos</span>
-          </div>
-          <div class="stat-card" id="stat-projects">
-            <span class="stat-number" data-target="8">0</span>
-            <span class="stat-label">ML Projects</span>
-          </div>
-          <div class="stat-card" id="stat-years">
-            <span class="stat-number" data-target="3">0</span>
-            <span class="stat-label">Years of Study</span>
-          </div>
-          <div class="stat-card" id="stat-langs">
-            <span class="stat-number" data-target="3">0</span>
-            <span class="stat-label">Languages Spoken</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="timeline">
 
-  <!-- ====== SKILLS ====== -->
-  <section class="section section-dark" id="skills" aria-label="Skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Tech Stack</span>
-        <h2 class="section-title">Skills & Tools</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-group reveal">
-          <div class="skill-group-icon"><i class="fas fa-code"></i></div>
-          <h3>Programming</h3>
-          <div class="skill-pills">
-            <span class="pill pill-python">Python</span>
-            <span class="pill">C</span>
-            <span class="pill">Java</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <div class="skill-group-icon"><i class="fas fa-brain"></i></div>
-          <h3>ML & AI</h3>
-          <div class="skill-pills">
-            <span class="pill">PyTorch</span>
-            <span class="pill">TensorFlow</span>
-            <span class="pill">Keras</span>
-            <span class="pill">Scikit-Learn</span>
-            <span class="pill">Hugging Face</span>
-            <span class="pill">LangChain</span>
-            <span class="pill">MLflow</span>
-            <span class="pill">TensorRT</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <div class="skill-group-icon"><i class="fas fa-database"></i></div>
-          <h3>Data & Big Data</h3>
-          <div class="skill-pills">
-            <span class="pill">Apache Spark</span>
-            <span class="pill">MongoDB</span>
-            <span class="pill">Neo4j</span>
-            <span class="pill">Pandas</span>
-            <span class="pill">NumPy</span>
-            <span class="pill">Matplotlib</span>
-            <span class="pill">Seaborn</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <div class="skill-group-icon"><i class="fas fa-tools"></i></div>
-          <h3>DevOps & Tools</h3>
-          <div class="skill-pills">
-            <span class="pill">Docker</span>
-            <span class="pill">Git</span>
-            <span class="pill">CI/CD</span>
-            <span class="pill">AWS</span>
-            <span class="pill">Poetry</span>
-            <span class="pill">Streamlit</span>
-            <span class="pill">Jupyter</span>
-            <span class="pill">gRPC</span>
-            <span class="pill">OpenMP</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== EXPERIENCE ====== -->
-  <section class="section" id="experience" aria-label="Work experience">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Career path</span>
-        <h2 class="section-title">Experience & Education</h2>
-      </div>
-      <div class="timeline">
-
-        <!-- IFPEN -->
-        <div class="timeline-item reveal" role="article">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-title">R&amp;D ML Engineer (Internship)</h3>
-                <p class="timeline-org">
-                  <i class="fas fa-building"></i>
-                  IFP Energies nouvelles (IFPEN)
-                </p>
+          <!-- IFPEN -->
+          <div class="timeline-item reveal" role="article">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card timeline-card-featured">
+              <div class="timeline-badge-tag"><i class="fas fa-star"></i> Flagship Industrial R&amp;D</div>
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Machine Learning R&amp;D Engineer – Internship</h3>
+                  <p class="timeline-org">
+                    <i class="fas fa-building"></i>
+                    IFP Energies nouvelles (IFPEN)
+                  </p>
+                </div>
+                <span class="timeline-date">Feb 2026 – Jul 2026</span>
               </div>
-              <span class="timeline-date">Feb 2026 – Present</span>
-            </div>
-            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Rueil-Malmaison, France</p>
-            <ul class="timeline-bullets">
-              <li>Developing a generative AI surrogate model to predict electric motor field mappings instantaneously
-                (PINNs, ML/DL architectures)</li>
-              <li>State-of-the-art review on physics-based equations and their AI surrogate counterparts</li>
-              <li>Designed ML/DL architectures capable of ingesting operational parameters for multi-topology motor
-                prediction</li>
-              <li>Built a complete data pipeline for experimental data processing</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tag-sm">PINNs</span>
-              <span class="tag-sm">Generative AI</span>
-              <span class="tag-sm">PyTorch</span>
-              <span class="tag-sm">Physics-ML</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Master Paris-Saclay -->
-        <div class="timeline-item reveal" role="article">
-          <div class="timeline-dot timeline-dot-edu"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-title">Master – Computer & Network Systems (Autonomic Systems)</h3>
-                <p class="timeline-org">
-                  <i class="fas fa-graduation-cap"></i>
-                  Université Paris-Saclay
-                </p>
-              </div>
-              <span class="timeline-date">Sep 2024 – Present</span>
-            </div>
-            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Évry, France</p>
-            <ul class="timeline-bullets">
-              <li>Specializing in Autonomous Systems, distributed computing, and AI</li>
-              <li>Research on LLM alignment with Knowledge Graphs (Master's research project)</li>
-              <li>Projects in multi-agent systems, parallel computing, and deep learning</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- GamhScan -->
-        <div class="timeline-item reveal" role="article">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-title">Junior Data Scientist</h3>
-                <p class="timeline-org">
-                  <i class="fas fa-seedling"></i>
-                  GamhScan – Agricultural Startup
-                </p>
-              </div>
-              <span class="timeline-date">Feb 2023 – Sep 2023</span>
-            </div>
-            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Batna, Algeria</p>
-            <ul class="timeline-bullets">
-              <li>Data engineering: Cleaning and augmentation of complex wheat seed imagery dataset</li>
-              <li>Computer vision: Optimized a hybrid Mask R-CNN + Transfer Learning architecture</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tag-sm">Mask R-CNN</span>
-              <span class="tag-sm">Transfer Learning</span>
-              <span class="tag-sm">Computer Vision</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Master Alger -->
-        <div class="timeline-item reveal" role="article">
-          <div class="timeline-dot timeline-dot-edu"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-title">Master – Intelligent Information Systems Engineering</h3>
-                <p class="timeline-org">
-                  <i class="fas fa-graduation-cap"></i>
-                  Université d'Alger 1
-                </p>
-              </div>
-              <span class="timeline-date">Sep 2023 – Jul 2024</span>
-            </div>
-            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Algiers, Algeria</p>
-          </div>
-        </div>
-
-        <!-- Licence -->
-        <div class="timeline-item reveal" role="article">
-          <div class="timeline-dot timeline-dot-edu"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-title">Bachelor's – Computer Science</h3>
-                <p class="timeline-org">
-                  <i class="fas fa-graduation-cap"></i>
-                  Université Batna 2
-                </p>
-              </div>
-              <span class="timeline-date">Sep 2020 – Jun 2023</span>
-            </div>
-            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Batna, Algeria</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== PROJECTS ====== -->
-  <section class="section section-dark" id="projects" aria-label="Projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">What I've built</span>
-        <h2 class="section-title">Featured Projects</h2>
-      </div>
-      <div class="filter-bar" role="tablist" aria-label="Project filter">
-        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-        <button class="filter-btn" data-filter="dl" role="tab" aria-selected="false">Deep Learning</button>
-        <button class="filter-btn" data-filter="ml" role="tab" aria-selected="false">Machine Learning</button>
-        <button class="filter-btn" data-filter="mas" role="tab" aria-selected="false">Multi-Agent</button>
-        <button class="filter-btn" data-filter="nlp" role="tab" aria-selected="false">NLP/LLM</button>
-      </div>
-      <div class="projects-grid" id="projectsGrid">
-
-        <article class="project-card reveal" data-category="dl" id="project-ssast">
-          <div class="project-glow"></div>
-          <div class="project-img-wrapper">
-            <img src="assets/project-ssast.png" alt="Self-Supervised Audio Spectrogram Transformer" class="project-img"
-              loading="lazy" />
-            <div class="project-img-overlay"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <div class="project-links">
-                <a href="https://github.com/dhiaelhakmokhtari/Self-Supervised-Audio-Spectrogram-Transformer-DL"
-                  target="_blank" rel="noopener" aria-label="GitHub repo" class="project-link"><i
-                    class="fab fa-github"></i></a>
+              <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Rueil-Malmaison, Paris Area, France</p>
+              <ul class="timeline-bullets">
+                <li>Developed a fully reproducible Python ML pipeline for multi-physics engineering data, automating data preparation, model training, quantitative model comparison, and rigorous evaluation.</li>
+                <li>Analysed and structured experimental bench measurements and CAD/FEM design descriptors associated with electric vehicle motors.</li>
+                <li>Developed and evaluated non-linear regression models, black-box deep neural networks, and physics-guided neural architectures (PGNNs) for predicting electric-motor loss maps across speed and torque operating regimes.</li>
+                <li>Investigated advanced surrogate modeling strategies (including FiLM conditioning) and systematically analyzed trade-offs between predictive accuracy, model complexity, computational latency, and physical constraints.</li>
+                <li>Designed a rigorous validation protocol to assess model generalisation to previously unseen motor geometries, focusing on robustness and out-of-distribution (OOD) prediction without traditional expensive simulations.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Scientific ML</span>
+                <span class="tag-sm">Surrogate Modeling</span>
+                <span class="tag-sm">Physics-Guided AI</span>
+                <span class="tag-sm">PyTorch</span>
+                <span class="tag-sm">FiLM Conditioning</span>
+                <span class="tag-sm">OOD Generalization</span>
+                <span class="tag-sm">Reproducible ML Pipelines</span>
               </div>
             </div>
-            <h3 class="project-title">Self-Supervised Audio Spectrogram Transformer</h3>
-            <p class="project-desc">Verified SSAST's performance claims on music genre classification (GTZAN).
-              Implemented spectrogram preprocessing, SSL masking, and compared against CNN baselines.</p>
-            <div class="project-dates">Nov – Dec 2025</div>
-            <div class="project-tech">
-              <span>PyTorch</span><span>Transformers</span><span>GTZAN</span><span>SSL</span>
-            </div>
           </div>
-        </article>
 
-        <article class="project-card reveal" data-category="nlp" id="project-kg-llm">
-          <div class="project-glow"></div>
-          <div class="project-img-wrapper">
-            <img src="assets/project-kg-llm.png" alt="LLM Alignment with Knowledge Graphs" class="project-img"
-              loading="lazy" />
-            <div class="project-img-overlay"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <div class="project-links">
-                <a href="https://github.com/dhiaelhakmokhtari/KG-guided-LLM-TER-2025" target="_blank" rel="noopener"
-                  aria-label="GitHub repo" class="project-link"><i class="fab fa-github"></i></a>
-                <a href="https://github.com/dhiaelhakmokhtari/KG-guided-LLM-finale" target="_blank" rel="noopener"
-                  aria-label="GitHub final repo" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+          <!-- Master Paris-Saclay -->
+          <div class="timeline-item reveal" role="article">
+            <div class="timeline-dot timeline-dot-edu"></div>
+            <div class="timeline-card">
+              <div class="timeline-badge-tag edu-badge"><i class="fas fa-award"></i> Ranked 2nd in M2 (Autonomous Systems)</div>
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Master's Degree in Computer &amp; Network Systems – Autonomous Systems Track</h3>
+                  <p class="timeline-org">
+                    <i class="fas fa-graduation-cap"></i>
+                    Université Paris-Saclay
+                  </p>
+                </div>
+                <span class="timeline-date">Sep 2024 – 2026</span>
+              </div>
+              <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Évry / Paris-Saclay, France</p>
+              <ul class="timeline-bullets">
+                <li><strong>Ranked 2nd in M2</strong> in the Autonomous Systems track.</li>
+                <li><strong>High Honors Coursework:</strong> Multi-objective Optimization (<strong>18/20</strong>), Concurrent and Distributed Systems (<strong>17/20</strong>), Game Theory (<strong>16/20</strong>), Deep Learning, Reinforcement Learning, Operations Research, Multi-Agent Systems, Formal Verification, Software-Defined Networks.</li>
+                <li><strong>Master Research Project:</strong> Investigated the integration of structured Knowledge Graphs (Neo4j) with Large Language Models (LLMs) to eliminate domain hallucinations for pedagogical explanations (supervised RAG architecture).</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Université Paris-Saclay</span>
+                <span class="tag-sm">Ranked 2nd in M2</span>
+                <span class="tag-sm">Multi-Objective Optimization</span>
+                <span class="tag-sm">Distributed Systems</span>
+                <span class="tag-sm">Autonomous Systems</span>
               </div>
             </div>
-            <h3 class="project-title">LLM Alignment with Knowledge Graphs</h3>
-            <p class="project-desc">Master's research: Integrated Knowledge Graphs with LLMs for contextual, precise,
-              and pedagogically adapted explanations.</p>
-            <div class="project-dates">Jan – May 2025</div>
-            <div class="project-tech">
-              <span>LangChain</span><span>Neo4j</span><span>LLMs</span><span>Knowledge Graphs</span>
-            </div>
           </div>
-        </article>
 
-        <article class="project-card reveal" data-category="ml" id="project-housing">
-          <div class="project-glow"></div>
-          <div class="project-img-wrapper">
-            <img src="assets/project-housing.png" alt="Housing Price Prediction" class="project-img" loading="lazy" />
-            <div class="project-img-overlay"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <div class="project-links">
-                <a href="https://github.com/dhiaelhakmokhtari/Housing-Prices-MachineLearning" target="_blank"
-                  rel="noopener" aria-label="GitHub repo" class="project-link"><i class="fab fa-github"></i></a>
+          <!-- GamhScan -->
+          <div class="timeline-item reveal" role="article">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Junior Machine Learning Engineer</h3>
+                  <p class="timeline-org">
+                    <i class="fas fa-seedling"></i>
+                    GamhScan – Agricultural AI Startup
+                  </p>
+                </div>
+                <span class="timeline-date">Feb 2023 – Sep 2023</span>
+              </div>
+              <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Batna, Algeria</p>
+              <ul class="timeline-bullets">
+                <li>Engineered an automated image-processing pipeline for cleaning, curating, quality-controlling, and augmenting complex grain imagery datasets.</li>
+                <li>Developed, tested, and fine-tuned a computer vision solution based on Mask R-CNN and transfer learning for instance segmentation and seed anomaly detection.</li>
+                <li>Benchmarked model inference and precision metrics, directly contributing to product improvement in an applied agritech environment.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Mask R-CNN</span>
+                <span class="tag-sm">Transfer Learning</span>
+                <span class="tag-sm">Computer Vision</span>
+                <span class="tag-sm">Data Curation</span>
               </div>
             </div>
-            <h3 class="project-title">Housing Price Prediction</h3>
-            <p class="project-desc">Supervised learning comparing Random Forest, XGBoost & more. Full feature
-              engineering and model evaluation pipeline.</p>
-            <div class="project-dates">Jan – Mar 2025</div>
-            <div class="project-tech">
-              <span>Scikit-Learn</span><span>XGBoost</span><span>Random Forest</span><span>Jupyter</span>
-            </div>
           </div>
-        </article>
 
-        <article class="project-card reveal" data-category="dl" id="project-arabic-cnn">
-          <div class="project-glow"></div>
-          <div class="project-img-wrapper">
-            <img src="assets/project-arabic-cnn.png" alt="Arabic Handwritten Letter Recognition" class="project-img"
-              loading="lazy" />
-            <div class="project-img-overlay"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <div class="project-links">
-                <a href="https://github.com/dhiaelhakmokhtari/ARABIC_CNN_Model-master" target="_blank" rel="noopener"
-                  aria-label="GitHub repo" class="project-link"><i class="fab fa-github"></i></a>
+          <!-- Master Alger -->
+          <div class="timeline-item reveal" role="article">
+            <div class="timeline-dot timeline-dot-edu"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Master's Degree in Intelligent Computer Systems Engineering</h3>
+                  <p class="timeline-org">
+                    <i class="fas fa-graduation-cap"></i>
+                    Université d'Alger 1
+                  </p>
+                </div>
+                <span class="timeline-date">Sep 2023 – Jul 2024</span>
               </div>
-            </div>
-            <h3 class="project-title">Arabic Handwritten Letter Recognition</h3>
-            <p class="project-desc">CNN architectures for Arabic handwritten letters, addressing script morphology and
-              letter connectivity challenges.</p>
-            <div class="project-dates">Apr 2024</div>
-            <div class="project-tech">
-              <span>TensorFlow</span><span>CNN</span><span>Computer Vision</span><span>Python</span>
+              <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Algiers, Algeria</p>
+              <p class="timeline-description">
+                Advanced studies in artificial intelligence algorithms, distributed systems engineering, database warehousing, and applied machine learning.
+              </p>
             </div>
           </div>
-        </article>
 
-        <article class="project-card reveal" data-category="ml" id="project-rl-blackjack">
-          <div class="project-glow"></div>
-          <div class="project-img-wrapper">
-            <img src="assets/project-rl.png" alt="SARSA vs Q-Learning on Blackjack" class="project-img"
-              loading="lazy" />
-            <div class="project-img-overlay"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <div class="project-links">
-                <a href="https://github.com/dhiaelhakmokhtari/SARSA-vs-QLearning-Blackjack" target="_blank"
-                  rel="noopener" aria-label="GitHub repo" class="project-link"><i class="fab fa-github"></i></a>
+          <!-- Licence Batna -->
+          <div class="timeline-item reveal" role="article">
+            <div class="timeline-dot timeline-dot-edu"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Bachelor's Degree in Computer Science (Licence Informatique)</h3>
+                  <p class="timeline-org">
+                    <i class="fas fa-graduation-cap"></i>
+                    Université Batna 2
+                  </p>
+                </div>
+                <span class="timeline-date">Sep 2020 – Jun 2023</span>
               </div>
-            </div>
-            <h3 class="project-title">SARSA vs Q-Learning on Blackjack</h3>
-            <p class="project-desc">On-Policy vs Off-Policy tabular RL on Gymnasium's Blackjack-v1 with convergence
-              analysis and win-rate visualizations.</p>
-            <div class="project-dates">Jan 2026</div>
-            <div class="project-tech">
-              <span>Gymnasium</span><span>SARSA</span><span>Q-Learning</span><span>RL</span>
+              <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Batna, Algeria</p>
+              <p class="timeline-description">
+                Rigorous grounding in computer science foundations: data structures, algorithmic complexity, object-oriented programming (Java/C++), operating systems, and discrete mathematics.
+              </p>
             </div>
           </div>
-        </article>
 
-        <article class="project-card reveal" data-category="mas" id="project-multiagent">
-          <div class="project-glow"></div>
-          <div class="project-img-wrapper">
-            <img src="assets/project-multiagent.png" alt="Multi-Agent Systems" class="project-img" loading="lazy" />
-            <div class="project-img-overlay"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <div class="project-links">
-                <a href="https://github.com/dhiaelhakmokhtari/Multi-Agent-Systems-Autonomous-Coordination"
-                  target="_blank" rel="noopener" aria-label="GitHub repo" class="project-link"><i
-                    class="fab fa-github"></i></a>
-              </div>
-            </div>
-            <h3 class="project-title">Multi-Agent Systems & Autonomous Coordination</h3>
-            <p class="project-desc">Multi-agent coordination protocols and autonomous behavior simulation in dynamic
-              environments.</p>
-            <div class="project-dates">Jan 2026</div>
-            <div class="project-tech">
-              <span>Processing</span><span>Java</span><span>MAS</span><span>Simulation</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-category="ml" id="project-svm">
-          <div class="project-glow"></div>
-          <div class="project-img-wrapper">
-            <img src="assets/project-svm.png" alt="SVM Iris Classification" class="project-img" loading="lazy" />
-            <div class="project-img-overlay"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <div class="project-links">
-                <a href="https://github.com/dhiaelhakmokhtari/SVM-IRIS-ML" target="_blank" rel="noopener"
-                  aria-label="GitHub repo" class="project-link"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-            <h3 class="project-title">SVM Iris Classification with GUI</h3>
-            <p class="project-desc">SVM classification on Iris dataset with multiple kernel functions and an interactive
-              Tkinter GUI. ⭐ 1 star.</p>
-            <div class="project-dates">Jan 2025</div>
-            <div class="project-tech">
-              <span>Scikit-Learn</span><span>SVM</span><span>Tkinter</span><span>Python</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-category="ml" id="project-dw">
-          <div class="project-glow"></div>
-          <div class="project-img-wrapper">
-            <img src="assets/project-dw.png" alt="Maghreb Climate Data Warehouse" class="project-img" loading="lazy" />
-            <div class="project-img-overlay"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <div class="project-links">
-                <a href="https://github.com/dhiaelhakmokhtari/DataWarehouseProjectM1" target="_blank" rel="noopener"
-                  aria-label="GitHub repo" class="project-link"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-            <h3 class="project-title">Maghreb Climate Data Warehouse</h3>
-            <p class="project-desc">Full ETL pipeline for Maghreb climate data with MySQL and Dash interactive
-              dashboards.</p>
-            <div class="project-dates">Jun 2024</div>
-            <div class="project-tech">
-              <span>MySQL</span><span>Dash</span><span>ETL</span><span>Python</span>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== GITHUB ====== -->
-  <section class="section" id="github" aria-label="GitHub activity">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Open Source</span>
-        <h2 class="section-title">GitHub Activity</h2>
-      </div>
-      <div class="github-hero reveal">
-        <div class="github-profile-card">
-          <img src="https://avatars.githubusercontent.com/u/dhiaelhakmokhtari?v=4" alt="Dhia Mokhtari GitHub avatar"
-            class="gh-avatar" id="ghAvatar" onerror="this.src='https://github.com/identicons/dhiaelhakmokhtari.png'" />
-          <div class="gh-info">
-            <h3>dhiaelhakmokhtari</h3>
-            <p>Dhia Elhak Mokhtari</p>
-            <div class="gh-stats">
-              <span><i class="fas fa-code-branch"></i> 12 repos</span>
-              <span><i class="fas fa-users"></i> 3 followers</span>
-              <span><i class="fas fa-map-marker-alt"></i> Paris, France</span>
-            </div>
-            <a href="https://github.com/dhiaelhakmokhtari" target="_blank" rel="noopener" class="btn btn-github"
-              id="view-github-btn">
-              <i class="fab fa-github"></i> View GitHub Profile
-            </a>
-          </div>
         </div>
       </div>
-      <!-- GitHub contribution graph -->
-      <div class="github-contrib reveal">
-        <h3>Contribution Graph</h3>
-        <div class="contrib-embed">
-          <img src="https://ghchart.rshah.org/6366f1/dhiaelhakmokhtari" alt="Dhia Mokhtari GitHub contribution chart"
-            class="contrib-chart" loading="lazy" />
-        </div>
-      </div>
-      <!-- GitHub most-used languages via API-like display -->
-      <div class="github-langs reveal">
-        <h3>Top Languages</h3>
-        <div class="lang-bars">
-          <div class="lang-bar">
-            <span class="lang-name">Python</span>
-            <div class="lang-track">
-              <div class="lang-fill" style="--w:75%; background:#3776ab;"></div>
-            </div>
-            <span class="lang-pct">75%</span>
-          </div>
-          <div class="lang-bar">
-            <span class="lang-name">Jupyter Notebook</span>
-            <div class="lang-track">
-              <div class="lang-fill" style="--w:15%; background:#da5b0b;"></div>
-            </div>
-            <span class="lang-pct">15%</span>
-          </div>
-          <div class="lang-bar">
-            <span class="lang-name">Processing / Java</span>
-            <div class="lang-track">
-              <div class="lang-fill" style="--w:6%; background:#e68e27;"></div>
-            </div>
-            <span class="lang-pct">6%</span>
-          </div>
-          <div class="lang-bar">
-            <span class="lang-name">C</span>
-            <div class="lang-track">
-              <div class="lang-fill" style="--w:4%; background:#555555;"></div>
-            </div>
-            <span class="lang-pct">4%</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ====== RESUME ====== -->
-  <section class="section section-dark" id="resume" aria-label="Resume">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Download</span>
-        <h2 class="section-title">Resume / CV</h2>
+    <!-- ====== PROJECTS ====== -->
+    <section class="section section-dark" id="projects" aria-label="Projects and Case Studies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Applied Technical Evidence</span>
+          <h2 class="section-title">Featured Projects &amp; Case Studies</h2>
+          <p class="section-subtitle">
+            Engineered with emphasis on problem formulation, reproducible methodologies, quantitative validation, and code craftsmanship.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" role="tablist" aria-label="Project category filter">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="sciml" role="tab" aria-selected="false">Scientific ML &amp; Surrogates</button>
+          <button class="filter-btn" data-filter="dl" role="tab" aria-selected="false">Deep Learning &amp; LLMs</button>
+          <button class="filter-btn" data-filter="rl" role="tab" aria-selected="false">Agents &amp; Reinforcement Learning</button>
+          <button class="filter-btn" data-filter="systems" role="tab" aria-selected="false">HPC &amp; Systems Engineering</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- 1. Flagship Project: IFPEN Physics-Guided ML -->
+          <article class="project-card project-card-flagship reveal" data-category="sciml" id="project-physics-ml">
+            <div class="project-flagship-ribbon"><i class="fas fa-certificate"></i> Flagship R&amp;D Case Study</div>
+            <div class="project-glow"></div>
+            <div class="project-img-wrapper">
+              <img src="assets/project-physics-ml.png" alt="Physics-Guided Neural Network for Electric Motor Surrogate Modeling" class="project-img" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-scope-tag"><i class="fas fa-shield-alt"></i> IFPEN Industrial R&amp;D</span>
+                <div class="project-links">
+                  <button class="btn-card-action open-case-study" data-project="ifpen-pgnn" aria-label="View case study details">
+                    <i class="fas fa-book-open"></i> Case Study
+                  </button>
+                </div>
+              </div>
+              <h3 class="project-title">Physics-Guided Neural Networks for Electric Motor Surrogate Modeling</h3>
+              <p class="project-desc">
+                Constructed deep surrogate models and physics-guided architectures (PGNNs) to predict electromagnetic loss maps under speed/torque operating regimes. Implemented FiLM conditioning on geometric descriptors, achieving near-instantaneous inference and robust zero-shot generalization across unseen motor geometries.
+              </p>
+              <div class="project-dates">IFPEN R&amp;D &middot; 2026</div>
+              <div class="project-tech">
+                <span>Scientific ML</span><span>PyTorch</span><span>PINNs</span><span>FiLM Conditioning</span><span>Surrogate Modeling</span><span>OOD Evaluation</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. SSAST -->
+          <article class="project-card reveal" data-category="dl" id="project-ssast">
+            <div class="project-glow"></div>
+            <div class="project-img-wrapper">
+              <img src="assets/project-ssast.png" alt="Self-Supervised Audio Spectrogram Transformer" class="project-img" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-scope-tag">PyTorch &middot; ViT</span>
+                <div class="project-links">
+                  <button class="btn-card-action open-case-study" data-project="ssast" aria-label="View SSAST case study">
+                    <i class="fas fa-book-open"></i>
+                  </button>
+                  <a href="https://github.com/dhiaelhakmokhtari/Self-Supervised-Audio-Spectrogram-Transformer-DL"
+                    target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for SSAST" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Self-Supervised Audio Spectrogram Transformer (SSAST)</h3>
+              <p class="project-desc">
+                Fine-tuned AudioSet-pretrained SSAST on low-resource GTZAN genre classification. Engineered a SpecAugment pipeline (24 Mel-bands / 96 frames) and trained ViT-Base under strict memory limits using Gradient Checkpointing, Gradient Accumulation, and Layer-wise Learning Rate Decay (LLRD).
+              </p>
+              <div class="project-dates">Nov 2025 – Jan 2026</div>
+              <div class="project-tech">
+                <span>PyTorch</span><span>Vision Transformers</span><span>SpecAugment</span><span>LLRD</span><span>Self-Supervised</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. LLMs with Knowledge Graphs -->
+          <article class="project-card reveal" data-category="dl" id="project-kg-llm">
+            <div class="project-glow"></div>
+            <div class="project-img-wrapper">
+              <img src="assets/project-kg-llm.png" alt="LLM Alignment with Knowledge Graphs" class="project-img" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-scope-tag">Graph-RAG &middot; GenAI</span>
+                <div class="project-links">
+                  <button class="btn-card-action open-case-study" data-project="kg-llm" aria-label="View Graph RAG case study">
+                    <i class="fas fa-book-open"></i>
+                  </button>
+                  <a href="https://github.com/dhiaelhakmokhtari/KG-guided-LLM-TER-2025" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub repository 1" class="project-link"><i class="fab fa-github"></i></a>
+                  <a href="https://github.com/dhiaelhakmokhtari/KG-guided-LLM-finale" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub final repository" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <h3 class="project-title">Aligning LLMs with Structured Knowledge Graphs (Graph-RAG)</h3>
+              <p class="project-desc">
+                Master's research project integrating Neo4j Knowledge Graphs with Large Language Models to eliminate domain hallucinations. Built a hybrid vector + Cypher retrieval pipeline using LangChain, LangGraph, ChromaDB, and Pydantic validation for structured educational explanations.
+              </p>
+              <div class="project-dates">Jan – May 2025</div>
+              <div class="project-tech">
+                <span>LangChain</span><span>LangGraph</span><span>Neo4j</span><span>ChromaDB</span><span>Ollama</span><span>RAG</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Distributed Multi-Agent (Warbot) -->
+          <article class="project-card reveal" data-category="rl" id="project-multiagent">
+            <div class="project-glow"></div>
+            <div class="project-img-wrapper">
+              <img src="assets/project-multiagent.png" alt="Distributed Multi-Agent Autonomous Coordination" class="project-img" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-scope-tag">Java &middot; Distributed AI</span>
+                <div class="project-links">
+                  <button class="btn-card-action open-case-study" data-project="multiagent" aria-label="View Multi-Agent case study">
+                    <i class="fas fa-book-open"></i>
+                  </button>
+                  <a href="https://github.com/dhiaelhakmokhtari/Multi-Agent-Systems-Autonomous-Coordination"
+                    target="_blank" rel="noopener noreferrer" aria-label="GitHub repo" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Distributed Multi-Agent Coordination Framework</h3>
+              <p class="project-desc">
+                Engineered an asynchronous multi-agent coordination simulation in Java/Processing. Designed targeted message passing, dynamic task production queues, hierarchical state machines (HSMs) for decentralized agent autonomy, stigmergic perimeter defense, and kinematics-based predictive aiming.
+              </p>
+              <div class="project-dates">Dec 2025 – Jan 2026</div>
+              <div class="project-tech">
+                <span>Java</span><span>Processing</span><span>Hierarchical State Machines</span><span>Message Passing</span><span>Concurrency</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. RL Framework: SARSA vs Q-Learning -->
+          <article class="project-card reveal" data-category="rl" id="project-rl-blackjack">
+            <div class="project-glow"></div>
+            <div class="project-img-wrapper">
+              <img src="assets/project-rl.png" alt="SARSA vs Q-Learning on Blackjack" class="project-img" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-scope-tag">Gymnasium &middot; Tabular RL</span>
+                <div class="project-links">
+                  <button class="btn-card-action open-case-study" data-project="rl-blackjack" aria-label="View RL benchmark case study">
+                    <i class="fas fa-book-open"></i>
+                  </button>
+                  <a href="https://github.com/dhiaelhakmokhtari/SARSA-vs-QLearning-Blackjack" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub repo" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="project-title">SARSA vs Q-Learning: Convergence &amp; Policy Benchmarking</h3>
+              <p class="project-desc">
+                Comparative analysis of On-Policy vs Off-Policy TD learning reaching theoretical optimality on Blackjack-v1. Engineered a "True Skill" evaluation pipeline, policy heatmaps across 1,500+ states to isolate maturity from exploration noise, and a seed-synchronized CLI benchmarking suite.
+              </p>
+              <div class="project-dates">Dec 2025 – Jan 2026</div>
+              <div class="project-tech">
+                <span>Gymnasium</span><span>Q-Learning</span><span>SARSA</span><span>True Skill</span><span>Statistical Benchmarking</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Evolutionary Game Theory & Spatial Simulation -->
+          <article class="project-card reveal" data-category="sciml" id="project-game-theory">
+            <div class="project-glow"></div>
+            <div class="project-img-wrapper">
+              <img src="assets/project-game-theory.png" alt="Evolutionary Game Theory & Spatial Simulation" class="project-img" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-scope-tag">NumPy Convolutions &middot; Simulation</span>
+                <div class="project-links">
+                  <button class="btn-card-action open-case-study" data-project="game-theory" aria-label="View Game Theory case study">
+                    <i class="fas fa-book-open"></i>
+                  </button>
+                  <a href="https://github.com/dhiaelhakmokhtari/Idea-Propagation-MultiAgent-Systems" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub repo" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="project-title">Vectorized Spatial Game Theory Simulation Engine</h3>
+              <p class="project-desc">
+                Engineered a high-performance simulation engine utilizing 2D NumPy and SciPy convolutions (`convolve2d`) for vectorized neighborhood payoff computation in the Spatial Prisoner's Dilemma. Built an interactive GUI monitoring emergent cooperation, phase transitions, and spatial cluster dynamics.
+              </p>
+              <div class="project-dates">Apr – May 2025</div>
+              <div class="project-tech">
+                <span>NumPy</span><span>SciPy</span><span>Vectorized Convolutions</span><span>Evolutionary Dynamics</span><span>Interactive GUI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. High Performance Computing & Parallelism in C -->
+          <article class="project-card reveal" data-category="systems" id="project-parallelism-c">
+            <div class="project-glow"></div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-scope-tag">C &middot; OpenMP &middot; HPC</span>
+                <div class="project-links">
+                  <a href="https://github.com/dhiaelhakmokhtari/revisiting-parallelism-in-C" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub repo" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="project-title">High-Performance Parallel Computing &amp; Memory Optimization in C</h3>
+              <p class="project-desc">
+                Low-level concurrent programming framework exploring POSIX threads, OpenMP multiprocessing, CPU cache hierarchy locality, false sharing avoidance, and SIMD vectorization to benchmark linear algebra workloads under strict performance constraints.
+              </p>
+              <div class="project-dates">2024 – 2025</div>
+              <div class="project-tech">
+                <span>C</span><span>OpenMP</span><span>POSIX Threads</span><span>Cache Optimization</span><span>SIMD</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Arabic Handwritten Letter CNN -->
+          <article class="project-card reveal" data-category="dl" id="project-arabic-cnn">
+            <div class="project-glow"></div>
+            <div class="project-img-wrapper">
+              <img src="assets/project-arabic-cnn.png" alt="Arabic Handwritten Letter Recognition" class="project-img" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-scope-tag">TensorFlow &middot; Vision</span>
+                <div class="project-links">
+                  <a href="https://github.com/dhiaelhakmokhtari/ARABIC_CNN_Model-master" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub repo" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="project-title">Arabic Handwritten Character Recognition with CNNs</h3>
+              <p class="project-desc">
+                Trained deep convolutional neural networks for handwriting character classification, tackling complex Arabic cursive morphology, stroke connectivity, and shape invariance via specialized preprocessing and data augmentation.
+              </p>
+              <div class="project-dates">Apr 2024</div>
+              <div class="project-tech">
+                <span>TensorFlow</span><span>CNN</span><span>Computer Vision</span><span>Image Augmentation</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Data Warehouse & Analytics -->
+          <article class="project-card reveal" data-category="systems" id="project-dw">
+            <div class="project-glow"></div>
+            <div class="project-img-wrapper">
+              <img src="assets/project-dw.png" alt="Maghreb Climate Data Warehouse" class="project-img" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-scope-tag">ETL &middot; MySQL &middot; Dash</span>
+                <div class="project-links">
+                  <a href="https://github.com/dhiaelhakmokhtari/DataWarehouseProjectM1" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub repo" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="project-title">Maghreb Climate Data Warehouse &amp; Analytics Platform</h3>
+              <p class="project-desc">
+                Architected an end-to-end ETL pipeline modeling longitudinal climate measurements across North Africa into a dimensional star schema in MySQL. Designed an interactive analytics dashboard in Dash/Plotly for temporal aggregation and spatial visualization.
+              </p>
+              <div class="project-dates">Jun 2024</div>
+              <div class="project-tech">
+                <span>MySQL</span><span>Python</span><span>Dash</span><span>ETL</span><span>Dimensional Modeling</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
-      <div class="resume-wrapper reveal">
-        <div class="resume-preview-card">
-          <div class="resume-icon"><i class="fas fa-file-pdf"></i></div>
-          <div class="resume-info">
-            <h3>Dhia Mokhtari — Curriculum Vitae</h3>
-            <p>R&amp;D ML Engineer · Master's Student at Paris-Saclay<br />
-              Skills: PyTorch, TensorFlow, LangChain, Docker, AWS · Updated March 2026</p>
-            <div class="resume-actions">
-              <a href="cv-31032026.pdf" download="Dhia_Mokhtari_CV.pdf" class="btn btn-primary" id="download-cv-btn">
-                <i class="fas fa-download"></i> Download CV (PDF)
+    </section>
+
+    <!-- ====== GITHUB ACTIVITY ====== -->
+    <section class="section" id="github" aria-label="GitHub activity">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Codebase &amp; Contributions</span>
+          <h2 class="section-title">GitHub Activity</h2>
+          <p class="section-subtitle">
+            Open-source repositories demonstrating continuous experimentation, clean documentation, and reproducible code.
+          </p>
+        </div>
+        <div class="github-hero reveal">
+          <div class="github-profile-card">
+            <img src="https://avatars.githubusercontent.com/u/dhiaelhakmokhtari?v=4" alt="Dhia Mokhtari GitHub avatar"
+              class="gh-avatar" id="ghAvatar" onerror="this.src='https://github.com/identicons/dhiaelhakmokhtari.png'" />
+            <div class="gh-info">
+              <h3>dhiaelhakmokhtari</h3>
+              <p>Dhia Elhak Mokhtari &middot; Scientific ML &amp; AI Engineer</p>
+              <div class="gh-stats">
+                <span><i class="fas fa-code-branch"></i> 13 repos</span>
+                <span><i class="fas fa-users"></i> Followers verified</span>
+                <span><i class="fas fa-map-marker-alt"></i> Paris, France</span>
+              </div>
+              <a href="https://github.com/dhiaelhakmokhtari" target="_blank" rel="noopener noreferrer" class="btn btn-github"
+                id="view-github-btn">
+                <i class="fab fa-github"></i> Visit GitHub Profile
               </a>
-              <a href="cv-31032026.pdf" target="_blank" rel="noopener" class="btn btn-ghost" id="view-cv-btn">
-                <i class="fas fa-eye"></i> View Online
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub contribution graph -->
+        <div class="github-contrib reveal">
+          <h3>Contribution Graph</h3>
+          <div class="contrib-embed">
+            <img src="https://ghchart.rshah.org/6366f1/dhiaelhakmokhtari" alt="Dhia Mokhtari GitHub contribution chart"
+              class="contrib-chart" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- GitHub top languages -->
+        <div class="github-langs reveal">
+          <h3>Core Technical Languages in Codebase</h3>
+          <div class="lang-bars">
+            <div class="lang-bar">
+              <span class="lang-name"><i class="fab fa-python" style="color:#3776ab;"></i> Python (PyTorch/Scikit)</span>
+              <div class="lang-track">
+                <div class="lang-fill" style="--w:78%; background:#3776ab;"></div>
+              </div>
+              <span class="lang-pct">78%</span>
+            </div>
+            <div class="lang-bar">
+              <span class="lang-name"><i class="fas fa-book" style="color:#da5b0b;"></i> Jupyter Notebooks (R&amp;D)</span>
+              <div class="lang-track">
+                <div class="lang-fill" style="--w:12%; background:#da5b0b;"></div>
+              </div>
+              <span class="lang-pct">12%</span>
+            </div>
+            <div class="lang-bar">
+              <span class="lang-name"><i class="fab fa-java" style="color:#e68e27;"></i> Java (Multi-Agent/Systems)</span>
+              <div class="lang-track">
+                <div class="lang-fill" style="--w:6%; background:#e68e27;"></div>
+              </div>
+              <span class="lang-pct">6%</span>
+            </div>
+            <div class="lang-bar">
+              <span class="lang-name"><i class="fas fa-code" style="color:#a855f7;"></i> C (Parallelism/HPC)</span>
+              <div class="lang-track">
+                <div class="lang-fill" style="--w:4%; background:#a855f7;"></div>
+              </div>
+              <span class="lang-pct">4%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== RESUME / CV ====== -->
+    <section class="section section-dark" id="resume" aria-label="Resume and Qualifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Verified Credentials</span>
+          <h2 class="section-title">Curriculum Vitae</h2>
+          <p class="section-subtitle">
+            Updated and verified versions aligned with industrial ML engineering requirements and academic credentials.
+          </p>
+        </div>
+        <div class="resume-wrapper reveal">
+
+          <!-- Primary Full Curriculum Vitae -->
+          <div class="resume-preview-card resume-primary-card">
+            <div class="resume-icon"><i class="fas fa-file-pdf"></i></div>
+            <div class="resume-info">
+              <div class="resume-tag-badge"><i class="fas fa-star"></i> Featured Curriculum Vitae</div>
+              <h3>Dhia Mokhtari — Full Curriculum Vitae (English)</h3>
+              <p>
+                <strong>Focus:</strong> Scientific ML &middot; Physics-Guided AI &middot; PyTorch &middot; Surrogate Modeling &middot; IFPEN R&amp;D Alum<br />
+                <strong>Availability:</strong> Open to PhD positions, R&amp;D roles (CDI/CDD), and collaborative missions.
+              </p>
+              <div class="resume-actions">
+                <a href="MOKHTARI_Dhia_Full_Curriculem_ENG_prvt.pdf" download="Dhia_Mokhtari_Curriculum_Vitae.pdf" class="btn btn-primary" id="download-cv-btn">
+                  <i class="fas fa-download"></i> Download CV (PDF)
+                </a>
+                <a href="MOKHTARI_Dhia_Full_Curriculem_ENG_prvt.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="view-cv-btn">
+                  <i class="fas fa-external-link-alt"></i> View Online
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications & Honors -->
+          <div class="certifications">
+            <h3>Verified Certifications &amp; Diplomas</h3>
+            <div class="cert-grid">
+              <div class="cert-card">
+                <i class="fab fa-google"></i>
+                <div>
+                  <strong>Google Data Analytics Professional Certificate</strong>
+                  <p>Certified in advanced SQL, statistical data analysis, and dashboard visualization.</p>
+                </div>
+              </div>
+              <div class="cert-card">
+                <i class="fas fa-language"></i>
+                <div>
+                  <strong>IELTS Academic Certificate — Band 7.5 (C1/C2 Fluency)</strong>
+                  <p>British Council certified academic English proficiency for technical and international environments.</p>
+                </div>
+              </div>
+              <div class="cert-card">
+                <i class="fas fa-award"></i>
+                <div>
+                  <strong>Master's Degree (Ranked 2nd) — Paris-Saclay</strong>
+                  <p>Ranked second in M2 Computer &amp; Network Systems (Autonomous Systems Track).</p>
+                </div>
+              </div>
+              <div class="cert-card">
+                <i class="fas fa-atom"></i>
+                <div>
+                  <strong>IFPEN Machine Learning R&amp;D Research Work</strong>
+                  <p>Completed 6-month industrial R&amp;D contract on surrogate modeling and physics-guided AI.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section class="section" id="contact" aria-label="Contact and Recruitment">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Direct Opportunities</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Whether you are discussing a <strong>PhD position</strong>, an <strong>R&amp;D role (CDI/CDD)</strong>, or a <strong>research collaboration</strong> — let's connect to explore opportunities.
+          </p>
+        </div>
+
+        <div class="contact-card-highlight reveal">
+          <div class="highlight-inner">
+            <div class="highlight-badge">
+              <span class="badge-dot"></span>
+              <span>Open to Opportunities · PhD, R&amp;D (CDI/CDD) &amp; Missions</span>
+            </div>
+            <h3>Open to PhD Positions, R&amp;D Roles (CDI/CDD) &amp; Collaborations</h3>
+            <p>
+              Whether you have a PhD opportunity, an R&amp;D opening (CDI/CDD), a scientific mission, or want to discuss machine learning research — reach out directly by email or via LinkedIn to arrange a discussion.
+            </p>
+            <div class="highlight-quick-actions">
+              <button class="btn btn-primary" id="copyEmailBtn" aria-label="Copy email address to clipboard">
+                <i class="fas fa-copy"></i> <span id="copyEmailText">Copy Email Address</span>
+              </button>
+              <a href="mailto:dhiaelhakmokhtari@gmail.com?subject=Opportunity%20/%20Inquiry%20-%20Dhia%20Mokhtari" class="btn btn-secondary">
+                <i class="fas fa-envelope"></i> Open Email Client
+              </a>
+              <a href="https://www.linkedin.com/in/dhia-mokhtari/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                <i class="fab fa-linkedin"></i> Connect on LinkedIn
               </a>
             </div>
           </div>
         </div>
-        <div class="certifications">
-          <h3>Certifications</h3>
-          <div class="cert-grid">
-            <div class="cert-card">
-              <i class="fab fa-google"></i>
-              <span>Google Data Analytics Professional Certificate</span>
-            </div>
-            <div class="cert-card">
-              <i class="fas fa-language"></i>
-              <span>IELTS Academic Certificate (Band 7.5 – C1)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ====== CONTACT ====== -->
-  <section class="section" id="contact" aria-label="Contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Let's talk</span>
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Whether it's a PhD opportunity, R&amp;D role, collaboration, or just a chat about AI
-          — I'm always happy to connect!</p>
-      </div>
-      <div class="contact-info-grid reveal">
-        <a href="mailto:dhiaelhakmokhtari@gmail.com" class="contact-item-card">
-          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-          <div>
-            <h4>Email</h4>
-            <span>dhiaelhakmokhtari@gmail.com</span>
+        <div class="contact-info-grid reveal">
+          <div class="contact-item-card clickable-card" id="emailContactCard">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <span class="contact-val">dhiaelhakmokhtari@gmail.com</span>
+              <small class="contact-hint"><i class="fas fa-mouse-pointer"></i> Click to copy</small>
+            </div>
           </div>
-        </a>
-        <a href="https://www.linkedin.com/in/dhia-mokhtari/" target="_blank" rel="noopener" class="contact-item-card">
-          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
-          <div>
-            <h4>LinkedIn</h4>
-            <span>linkedin.com/in/dhia-mokhtari</span>
+
+          <div class="contact-item-card">
+            <div class="contact-icon"><i class="fas fa-video"></i></div>
+            <div>
+              <h4>Remote Interviews</h4>
+              <span class="contact-val">Google Meet &middot; Zoom &middot; Teams</span>
+              <small class="contact-hint">Available for calls upon request</small>
+            </div>
           </div>
-        </a>
-        <a href="https://github.com/dhiaelhakmokhtari" target="_blank" rel="noopener" class="contact-item-card">
-          <div class="contact-icon"><i class="fab fa-github"></i></div>
-          <div>
-            <h4>GitHub</h4>
-            <span>github.com/dhiaelhakmokhtari</span>
+
+          <a href="https://www.linkedin.com/in/dhia-mokhtari/" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <span class="contact-val">linkedin.com/in/dhia-mokhtari</span>
+              <small class="contact-hint"><i class="fas fa-external-link-alt"></i> Connect profile</small>
+            </div>
+          </a>
+
+          <a href="https://github.com/dhiaelhakmokhtari" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <span class="contact-val">github.com/dhiaelhakmokhtari</span>
+              <small class="contact-hint"><i class="fas fa-code"></i> View repositories</small>
+            </div>
+          </a>
+
+          <div class="contact-item-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location &amp; Mobility</h4>
+              <span class="contact-val">Choisy-le-Roi, Paris Area, France</span>
+              <small class="contact-hint">Île-de-France &middot; Remote &middot; International</small>
+            </div>
           </div>
-        </a>
-        <div class="contact-item-card">
-          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-          <div>
-            <h4>Location</h4>
-            <span>Île-de-France, France</span>
+
+          <div class="contact-item-card">
+            <div class="contact-icon"><i class="fas fa-briefcase"></i></div>
+            <div>
+              <h4>Opportunities &amp; Scope</h4>
+              <span class="contact-val">PhD, R&amp;D (CDI/CDD) &amp; Missions</span>
+              <small class="contact-hint">France (Paris / Hybrid) &middot; International</small>
+            </div>
           </div>
         </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== CASE STUDY MODAL ====== -->
+  <div class="modal-overlay" id="caseStudyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close case study modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <span class="modal-badge" id="modalBadge">Case Study</span>
+        <h2 class="modal-title" id="modalTitle">Project Title</h2>
+        <div class="modal-meta" id="modalMeta"></div>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer" id="modalFooter">
+        <!-- Injected action buttons -->
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- ====== FOOTER ====== -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-content">
         <p class="footer-brand">DM<span class="dot">.</span></p>
-        <p class="footer-copy">© 2026 Dhia Mokhtari · Built with ❤️ and vanilla HTML/CSS/JS</p>
+        <p class="footer-copy">
+          &copy; 2026 Dhia Mokhtari &middot; Scientific Machine Learning &amp; AI Engineer &middot; Choisy-le-Roi, France
+        </p>
         <div class="footer-socials">
-          <a href="https://github.com/dhiaelhakmokhtari" target="_blank" rel="noopener" aria-label="GitHub"><i
+          <a href="https://github.com/dhiaelhakmokhtari" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
               class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/dhia-mokhtari/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+          <a href="https://www.linkedin.com/in/dhia-mokhtari/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
               class="fab fa-linkedin"></i></a>
           <a href="mailto:dhiaelhakmokhtari@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
@@ -756,10 +1129,13 @@
     </div>
   </footer>
 
-  <!-- Back to top -->
+  <!-- Back to top button -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="fas fa-chevron-up"></i>
   </button>
+
+  <!-- Toast for feedback -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="script.js"></script>
 </body>
