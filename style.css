@@ -306,26 +306,6 @@ code {
   color: var(--t1); transform: translateY(-1px);
 }
 
-.hero-scroll-hint {
-  position: absolute; bottom: 24px; left: 50%;
-  transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  font-size: 0.65rem; color: var(--t3);
-  letter-spacing: 0.14em; text-transform: uppercase;
-  font-family: var(--mono);
-}
-.scroll-line {
-  width: 1px; height: 36px;
-  background: linear-gradient(to bottom, var(--t3), transparent);
-  animation: scrollLine 1.8s ease-in-out infinite;
-}
-@keyframes scrollLine {
-  0%   { transform: scaleY(0); transform-origin: top; }
-  50%  { transform: scaleY(1); transform-origin: top; }
-  51%  { transform-origin: bottom; }
-  100% { transform: scaleY(0); transform-origin: bottom; }
-}
-
 /* ── BUTTONS — square-ish, functional ── */
 .btn {
   display: inline-flex; align-items: center; gap: 7px;
@@ -666,47 +646,39 @@ code {
 }
 .project-card:hover { background: var(--surface-2); }
 
-/* Flagship card — full row */
+/* Flagship card — full width editorial highlight */
 .project-card-flagship {
   grid-column: 1 / -1;
-  flex-direction: row;
+  background: var(--surface);
   border-bottom: 1px solid var(--b);
+  border-left: 2px solid var(--blue);
 }
-.project-card-flagship .project-img-wrapper {
-  width: 280px; flex-shrink: 0; height: auto; min-height: 200px;
+.project-card-flagship:hover { background: var(--surface-2); }
+.project-card-flagship .project-body {
+  padding: 26px 30px 28px;
 }
-.project-card-flagship .project-body { justify-content: center; }
+.project-card-flagship .project-title {
+  font-size: 1.15rem;
+}
+.project-card-flagship .project-desc {
+  font-size: 0.885rem;
+  max-width: 95ch;
+}
 
 .project-flagship-ribbon {
-  position: absolute; top: 12px; left: 12px;
-  background: var(--blue); color: #fff;
-  font-size: 0.62rem; font-weight: 700;
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--blue-dim); border: 1px solid var(--blue-border);
+  color: var(--blue);
+  font-size: 0.65rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.1em;
-  padding: 3px 8px; border-radius: var(--rm);
-  display: flex; align-items: center; gap: 5px;
-  font-family: var(--mono); z-index: 2;
-}
-
-.project-img-wrapper {
-  position: relative; width: 100%; height: 190px;
-  overflow: hidden; flex-shrink: 0;
-}
-.project-img {
-  width: 100%; height: 100%; object-fit: cover;
-  transition: transform 0.45s var(--ease), filter 0.45s;
-  filter: brightness(0.75) saturate(0.85) grayscale(0.1);
-}
-.project-card:hover .project-img {
-  transform: scale(1.03); filter: brightness(0.88) saturate(1);
-}
-.project-img-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to bottom, transparent 30%, rgba(10,10,15,0.88));
-  pointer-events: none;
+  padding: 3px 9px; border-radius: var(--rm);
+  font-family: var(--mono);
+  margin-bottom: 12px;
+  width: fit-content;
 }
 
 .project-body {
-  padding: 18px 20px 20px;
+  padding: 22px 22px 24px;
   display: flex; flex-direction: column; flex: 1;
 }
 .project-header {
@@ -751,17 +723,11 @@ code {
   font-family: var(--mono);
 }
 
-.github-contrib { margin-bottom: 36px; }
-.github-contrib h3, .github-langs h3 {
+.github-langs h3 {
   font-size: 0.875rem; font-weight: 700; margin-bottom: 16px;
   color: var(--t2); font-family: var(--mono);
   text-transform: uppercase; letter-spacing: 0.08em;
 }
-.contrib-embed {
-  background: var(--surface); border: 1px solid var(--b);
-  border-radius: var(--r); padding: 18px; overflow: hidden;
-}
-.contrib-chart { width: 100%; border-radius: 4px; opacity: 0.85; }
 
 .lang-bars { display: flex; flex-direction: column; gap: 11px; }
 .lang-bar {
@@ -1053,8 +1019,6 @@ code {
 @media (max-width: 1024px) {
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .nav-status-badge { display: none; }
-  .project-card-flagship { flex-direction: column; }
-  .project-card-flagship .project-img-wrapper { width: 100%; height: 200px; }
 }
 
 @media (max-width: 768px) {
@@ -1078,7 +1042,6 @@ code {
   .timeline-header { flex-direction: column; gap: 7px; }
   .timeline-date { align-self: flex-start; }
   .projects-grid { grid-template-columns: 1fr; }
-  .project-img-wrapper { height: 175px; }
   .github-profile-card { flex-direction: column; text-align: center; padding: 20px; }
   .gh-stats { justify-content: center; }
   .lang-bar { grid-template-columns: 120px 1fr 38px; gap: 10px; }
