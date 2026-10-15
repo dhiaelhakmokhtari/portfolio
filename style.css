@@ -122,6 +122,9 @@ code {
   border: 1px solid var(--blue-border);
   border-radius: var(--rm);
   padding: 1px 7px; color: var(--blue);
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* ── NAVBAR ── */
@@ -202,10 +205,9 @@ code {
 
 /* ── HERO ── */
 .hero {
-  min-height: 100vh;
   display: flex; align-items: center; justify-content: center;
   position: relative; overflow: hidden;
-  padding: 120px 24px 80px;
+  padding: 96px 24px 52px;
 }
 
 /* Fine dot grid — CSS only, very subtle */
@@ -226,49 +228,50 @@ code {
 
 .hero-content {
   position: relative; z-index: 1;
-  text-align: center; max-width: 780px;
+  text-align: center; max-width: 820px;
 }
 
 .hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
-  padding: 5px 14px; border-radius: 100px;
+  padding: 4px 12px; border-radius: 100px;
   background: var(--green-dim); border: 1px solid var(--green-border);
-  font-size: 0.75rem; color: var(--green); font-weight: 600;
+  font-size: 0.72rem; color: var(--green); font-weight: 600;
   font-family: var(--mono); letter-spacing: 0.02em;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.1rem;
   animation: fadeUp 0.5s var(--ease) both;
 }
 
 .hero-title {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   animation: fadeUp 0.6s var(--ease) 0.07s both;
 }
 
 .hero-greeting {
-  display: block; font-size: 0.9375rem;
-  font-weight: 400; color: var(--t2); margin-bottom: 0.4rem;
+  display: block; font-size: 0.875rem;
+  font-weight: 400; color: var(--t2); margin-bottom: 0.25rem;
 }
 
-/* SOLID white — no gradient */
+/* Scaled editorial title */
 .hero-name {
   display: block;
-  font-size: clamp(2.8rem, 7vw, 5rem);
-  font-weight: 800; line-height: 1.0;
-  letter-spacing: -0.045em;
-  color: var(--t1);           /* solid, no gradient */
+  font-size: clamp(2.1rem, 5vw, 3.25rem);
+  font-weight: 800; line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--t1);
 }
 
 .hero-role {
   font-family: var(--mono);
-  font-size: clamp(0.875rem, 1.8vw, 1.0625rem);
+  font-size: clamp(0.8125rem, 1.4vw, 0.95rem);
   color: var(--blue); font-weight: 500;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   animation: fadeUp 0.65s var(--ease) 0.14s both;
 }
 
 .hero-desc {
-  font-size: 0.9375rem; color: var(--t2);
-  line-height: 1.8; margin-bottom: 2rem;
+  font-size: 0.9rem; color: var(--t2);
+  line-height: 1.65; max-width: 800px;
+  margin: 0 auto 1.25rem;
   animation: fadeUp 0.7s var(--ease) 0.2s both;
 }
 .hero-desc strong { color: var(--t1); }
@@ -276,23 +279,23 @@ code {
 /* Quickbar — spaced row of data points */
 .recruiter-quickbar {
   display: flex; flex-wrap: wrap; justify-content: center;
-  gap: 8px; margin-bottom: 2rem;
+  gap: 6px; margin-bottom: 1.25rem;
   animation: fadeUp 0.75s var(--ease) 0.26s both;
 }
 .quickbar-item {
-  display: inline-flex; align-items: center; gap: 7px;
-  padding: 4px 12px;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px;
   background: var(--surface); border: 1px solid var(--b);
   border-radius: var(--r);
-  font-size: 0.775rem; color: var(--t2);
+  font-size: 0.75rem; color: var(--t2);
   font-family: var(--mono);
 }
-.quickbar-item i { color: var(--blue); font-size: 0.75rem; }
+.quickbar-item i { color: var(--blue); font-size: 0.72rem; }
 .quickbar-item strong { color: var(--t1); font-family: var(--font); }
 
 .hero-actions {
   display: flex; gap: 8px; justify-content: center;
-  flex-wrap: wrap; margin-bottom: 1.75rem;
+  flex-wrap: wrap; margin-bottom: 1.1rem;
   animation: fadeUp 0.8s var(--ease) 0.32s both;
 }
 
@@ -301,15 +304,15 @@ code {
   animation: fadeUp 0.85s var(--ease) 0.38s both;
 }
 .social-icon {
-  width: 36px; height: 36px; border-radius: var(--r);
+  width: 32px; height: 32px; border-radius: var(--r);
   display: flex; align-items: center; justify-content: center;
   background: var(--surface); border: 1px solid var(--b);
-  color: var(--t2); font-size: 0.9375rem;
+  color: var(--t2); font-size: 0.875rem;
   transition: all var(--t);
 }
 .social-icon:hover {
   background: var(--blue); border-color: var(--blue);
-  color: var(--t1); transform: translateY(-1px);
+  color: var(--btn-text); transform: translateY(-1px);
 }
 
 /* ── BUTTONS — square-ish, functional ── */
@@ -369,14 +372,14 @@ code {
 .btn-card-action:hover { background: var(--blue); color: var(--btn-text); }
 
 /* ── SECTIONS ── */
-.section { padding: 88px 0; }
+.section { padding: 48px 0; }
 .section-alt { background: var(--bg-alt); }
 
-.section-header { text-align: center; margin-bottom: 52px; }
+.section-header { text-align: center; margin-bottom: 28px; }
 
 /* Monospace section tag — e.g. // Technical Competencies */
 .section-tag {
-  display: block; margin-bottom: 12px;
+  display: block; margin-bottom: 8px;
   font-family: var(--mono); font-size: 0.6875rem;
   font-weight: 600; color: var(--t3);
   text-transform: uppercase; letter-spacing: 0.18em;
@@ -392,8 +395,8 @@ code {
 
 .section-subtitle {
   font-size: 0.9375rem; color: var(--t2);
-  margin-top: 0.75rem; max-width: 560px;
-  margin-left: auto; margin-right: auto; line-height: 1.75;
+  margin-top: 0.5rem; max-width: 580px;
+  margin-left: auto; margin-right: auto; line-height: 1.65;
 }
 
 /* Horizontal rule between sections */
@@ -1027,7 +1030,7 @@ code {
 
 @media (max-width: 768px) {
   :root { --nav-h: 56px; }
-  .section { padding: 64px 0; }
+  .section { padding: 36px 0; }
   .nav-links {
     display: none; flex-direction: column; gap: 0;
     position: absolute; top: var(--nav-h); left: 0; right: 0;
