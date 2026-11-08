@@ -92,7 +92,7 @@
   <!-- ====== NAVBAR ====== -->
   <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo" aria-label="Dhia Mokhtari home">DM<span class="dot">.</span></a>
+      <a href="#hero" class="nav-logo" aria-label="Dhia Mokhtari home">Dhia<span class="dot">.</span></a>
       <div class="nav-status-badge">
         <span class="badge-dot"></span>
         <span class="nav-status-text">Open · PhD, R&amp;D (CDI/CDD) &amp; Missions</span>
@@ -156,7 +156,7 @@
           </div>
           <div class="quickbar-item">
             <i class="fas fa-language"></i>
-            <span><strong>Languages:</strong> English (C2 &middot; IELTS 7.5) &middot; French (C2) &middot; Arabic (C2)</span>
+            <span><strong>Languages:</strong> English (Bilingual &middot; IELTS 7.5) &middot; French (C2) &middot; Arabic (Native) &middot; Chaoui - Tamazight (Native)</span>
           </div>
         </div>
 
@@ -164,7 +164,7 @@
           <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
             <i class="fas fa-layer-group"></i> Explore Projects &amp; Case Studies
           </a>
-          <a href="MOKHTARI_Dhia_Full_Curriculem_ENG_prvt.pdf" download="Dhia_Mokhtari_Curriculum_Vitae.pdf"
+          <a href="MOKHTARI_Dhia_Curriculem_privatized.pdf" download="Dhia_Mokhtari_Curriculum_Vitae.pdf"
             class="btn btn-secondary" id="hero-cv-btn">
             <i class="fas fa-download"></i> Download CV (PDF)
           </a>
@@ -408,6 +408,37 @@
         </div>
         <div class="timeline">
 
+          <!-- Le Wagon -->
+          <div class="timeline-item reveal" role="article">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card timeline-card-featured">
+              <div class="timeline-badge-tag"><i class="fas fa-chalkboard-teacher"></i> Current Role &middot; Freelance</div>
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Data Scientist | Engineer – Teaching Assistant (Freelance)</h3>
+                  <p class="timeline-org">
+                    <i class="fas fa-laptop-code"></i>
+                    Le Wagon
+                  </p>
+                </div>
+                <span class="timeline-date">Sep 2026 – Present</span>
+              </div>
+              <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Madrid, Spain (Remote)</p>
+              <ul class="timeline-bullets">
+                <li>Support lead lecturers during live sessions and mentor engineering cohorts in advanced Data Science and Engineering concepts, including data modeling, Deep Learning architectures, model fine-tuning, and REST APIs for containerized cloud deployments.</li>
+                <li>Resolve real-time technical tickets and act as an escalation point for complex bugs (dependency conflicts, build failures), while auditing project blueprints to standardize deployment best practices.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Data Science</span>
+                <span class="tag-sm">Deep Learning</span>
+                <span class="tag-sm">Model Fine-Tuning</span>
+                <span class="tag-sm">REST APIs</span>
+                <span class="tag-sm">Cloud Deployments</span>
+                <span class="tag-sm">Docker</span>
+              </div>
+            </div>
+          </div>
+
           <!-- IFPEN -->
           <div class="timeline-item reveal" role="article">
             <div class="timeline-dot"></div>
@@ -415,21 +446,22 @@
               <div class="timeline-badge-tag"><i class="fas fa-star"></i> Flagship Industrial R&amp;D</div>
               <div class="timeline-header">
                 <div>
-                  <h3 class="timeline-title">Machine Learning R&amp;D Engineer – Internship</h3>
+                  <h3 class="timeline-title">R&amp;D Machine Learning Engineer – Internship</h3>
                   <p class="timeline-org">
                     <i class="fas fa-building"></i>
-                    IFP Energies nouvelles (IFPEN)
+                    IFPEN – IFP Energies nouvelles
                   </p>
                 </div>
                 <span class="timeline-date">Feb 2026 – Jul 2026</span>
               </div>
-              <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Rueil-Malmaison, Paris Area, France</p>
+              <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Rueil-Malmaison, France</p>
               <ul class="timeline-bullets">
-                <li>Developed a fully reproducible Python ML pipeline for multi-physics engineering data, automating data preparation, model training, quantitative model comparison, and rigorous evaluation.</li>
-                <li>Analysed and structured experimental bench measurements and CAD/FEM design descriptors associated with electric vehicle motors.</li>
-                <li>Developed and evaluated non-linear regression models, black-box deep neural networks, and physics-guided neural architectures (PGNNs) for predicting electric-motor loss maps across speed and torque operating regimes.</li>
-                <li>Investigated advanced surrogate modeling strategies (including FiLM conditioning) and systematically analyzed trade-offs between predictive accuracy, model complexity, computational latency, and physical constraints.</li>
-                <li>Designed a rigorous validation protocol to assess model generalisation to previously unseen motor geometries, focusing on robustness and out-of-distribution (OOD) prediction without traditional expensive simulations.</li>
+                <li>Designed then developed a Physics-Guided Neural Network (PGNN) for the prediction of electric motor loss and efficiency maps.</li>
+                <li>Conducted a comprehensive state-of-the-art literature and domain review on low-level EV motor mechanics and existing predictive research.</li>
+                <li>Applied expertise in experimental data processing, Deep Learning, FiLM conditioning, and analytical models.</li>
+                <li>Designed hybrid architectures using FiLM and motor-design descriptors to condition predictions.</li>
+                <li>Conducted comparative studies between classical regression, black-box neural networks, and physics-guided architectures.</li>
+                <li>Developed a robust data pipeline to clean dirty experimental data into physically consistent datasets, enabling zero-shot generalization across unseen motor geometries and different power specifications.</li>
               </ul>
               <div class="timeline-tags">
                 <span class="tag-sm">Scientific ML</span>
@@ -438,7 +470,7 @@
                 <span class="tag-sm">PyTorch</span>
                 <span class="tag-sm">FiLM Conditioning</span>
                 <span class="tag-sm">OOD Generalization</span>
-                <span class="tag-sm">Reproducible ML Pipelines</span>
+                <span class="tag-sm">Zero-Shot Prediction</span>
               </div>
             </div>
           </div>
@@ -450,13 +482,13 @@
               <div class="timeline-badge-tag edu-badge"><i class="fas fa-award"></i> Ranked 2nd in M2 (Autonomous Systems)</div>
               <div class="timeline-header">
                 <div>
-                  <h3 class="timeline-title">Master's Degree in Computer &amp; Network Systems – Autonomous Systems Track</h3>
+                  <h3 class="timeline-title">Master's Degree in Computer &amp; Network Systems – Autonomous Systems Track (CNS SA)</h3>
                   <p class="timeline-org">
                     <i class="fas fa-graduation-cap"></i>
                     Université Paris-Saclay
                   </p>
                 </div>
-                <span class="timeline-date">Sep 2024 – 2026</span>
+                <span class="timeline-date">Sep 2024 – Sep 2026</span>
               </div>
               <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Évry / Paris-Saclay, France</p>
               <ul class="timeline-bullets">
@@ -483,16 +515,15 @@
                   <h3 class="timeline-title">Junior Machine Learning Engineer</h3>
                   <p class="timeline-org">
                     <i class="fas fa-seedling"></i>
-                    GamhScan – Agricultural AI Startup
+                    GamhScan
                   </p>
                 </div>
                 <span class="timeline-date">Feb 2023 – Sep 2023</span>
               </div>
               <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Batna, Algeria</p>
               <ul class="timeline-bullets">
-                <li>Engineered an automated image-processing pipeline for cleaning, curating, quality-controlling, and augmenting complex grain imagery datasets.</li>
-                <li>Developed, tested, and fine-tuned a computer vision solution based on Mask R-CNN and transfer learning for instance segmentation and seed anomaly detection.</li>
-                <li>Benchmarked model inference and precision metrics, directly contributing to product improvement in an applied agritech environment.</li>
+                <li>Performed data engineering tasks including cleaning and augmentation of a complex wheat grain imaging dataset.</li>
+                <li>Optimized a hybrid Computer Vision architecture using Mask R-CNN and Transfer Learning techniques.</li>
               </ul>
               <div class="timeline-tags">
                 <span class="tag-sm">Mask R-CNN</span>
@@ -872,14 +903,14 @@
               <div class="resume-tag-badge"><i class="fas fa-file-lines"></i> PDF Document &middot; English</div>
               <h3>Dhia Mokhtari — Full Curriculum Vitae (English)</h3>
               <p>
-                <strong>Focus:</strong> Scientific ML &middot; Physics-Guided AI &middot; PyTorch &middot; Surrogate Modeling &middot; IFPEN R&amp;D Alum<br />
+                <strong>Focus:</strong> Scientific ML &middot; Physics-Guided AI &middot; PyTorch &middot; Surrogate Modeling &middot; Le Wagon &amp; IFPEN Alum<br />
                 <strong>Availability:</strong> Open to PhD positions, R&amp;D roles (CDI/CDD), and collaborative missions.
               </p>
               <div class="resume-actions">
-                <a href="MOKHTARI_Dhia_Full_Curriculem_ENG_prvt.pdf" download="Dhia_Mokhtari_Curriculum_Vitae.pdf" class="btn btn-primary" id="download-cv-btn">
+                <a href="MOKHTARI_Dhia_Curriculem_privatized.pdf" download="Dhia_Mokhtari_Curriculum_Vitae.pdf" class="btn btn-primary" id="download-cv-btn">
                   <i class="fas fa-download"></i> Download CV (PDF)
                 </a>
-                <a href="MOKHTARI_Dhia_Full_Curriculem_ENG_prvt.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="view-cv-btn">
+                <a href="MOKHTARI_Dhia_Curriculem_privatized.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="view-cv-btn">
                   <i class="fas fa-external-link-alt"></i> View Online
                 </a>
               </div>
@@ -900,8 +931,8 @@
               <div class="cert-card">
                 <i class="fas fa-language"></i>
                 <div>
-                  <strong>IELTS Academic Certificate — Band 7.5 (C1/C2 Fluency)</strong>
-                  <p>British Council certified academic English proficiency for technical and international environments.</p>
+                  <strong>IELTS Academic Certificate — Band 7.5 (Speaking 8.5 &middot; C1/C2)</strong>
+                  <p>British Council certified academic English proficiency (Band 8.5 in Speaking) for technical and international environments.</p>
                 </div>
               </div>
               <div class="cert-card">
@@ -1027,7 +1058,7 @@
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-brand">DM<span class="dot">.</span></p>
+        <p class="footer-brand">Dhia<span class="dot">.</span></p>
         <p class="footer-copy">
           &copy; 2026 Dhia Mokhtari &middot; Scientific Machine Learning &amp; AI Engineer &middot; France
         </p>
