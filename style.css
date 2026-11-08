@@ -155,7 +155,7 @@ code {
   font-family: var(--mono);
 }
 
-/* Status badge — emerald pill is OK here (one exception) */
+/* Status badge — emerald pill, appears on scroll to avoid echoing hero badge */
 .nav-status-badge {
   display: inline-flex; align-items: center; gap: 7px;
   padding: 3px 10px; border-radius: 100px;
@@ -163,6 +163,13 @@ code {
   border: 1px solid var(--green-border);
   font-size: 0.7rem; color: var(--green); font-weight: 600;
   font-family: var(--mono);
+  opacity: 0; pointer-events: none;
+  transform: translateY(-4px);
+  transition: opacity var(--t) var(--ease), transform var(--t) var(--ease);
+}
+.navbar.scrolled .nav-status-badge {
+  opacity: 1; pointer-events: auto;
+  transform: translateY(0);
 }
 
 .badge-dot {
