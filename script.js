@@ -202,7 +202,8 @@ const caseStudies = {
       }
     ],
     links: [
-      { text: 'View GitHub Repository', url: 'https://github.com/dhiaelhakmokhtari/Self-Supervised-Audio-Spectrogram-Transformer-DL', icon: 'fab fa-github' }
+      { text: 'Read Research Report (PDF)', url: 'reports/deep_learning.pdf', icon: 'fas fa-file-lines' },
+      { text: 'View GitHub Repository', url: 'https://github.com/dhiaelhakmokhtari/Self-Supervised-Audio-Spectrogram-Transformer-DL', icon: 'fab fa-github', btnClass: 'btn-secondary' }
     ]
   },
 
@@ -238,8 +239,9 @@ const caseStudies = {
       }
     ],
     links: [
-      { text: 'View TER-2025 Repo', url: 'https://github.com/dhiaelhakmokhtari/KG-guided-LLM-TER-2025', icon: 'fab fa-github' },
-      { text: 'View Final Pipeline Repo', url: 'https://github.com/dhiaelhakmokhtari/KG-guided-LLM-finale', icon: 'fas fa-external-link-alt' }
+      { text: 'Read Research Report (PDF)', url: 'reports/TER_Rapport_.pdf', icon: 'fas fa-file-lines' },
+      { text: 'View TER-2025 Repo', url: 'https://github.com/dhiaelhakmokhtari/KG-guided-LLM-TER-2025', icon: 'fab fa-github', btnClass: 'btn-secondary' },
+      { text: 'View Final Pipeline Repo', url: 'https://github.com/dhiaelhakmokhtari/KG-guided-LLM-finale', icon: 'fas fa-external-link-alt', btnClass: 'btn-secondary' }
     ]
   },
 
@@ -275,7 +277,8 @@ const caseStudies = {
       }
     ],
     links: [
-      { text: 'View GitHub Repository', url: 'https://github.com/dhiaelhakmokhtari/Multi-Agent-Systems-Autonomous-Coordination', icon: 'fab fa-github' }
+      { text: 'Read Project Report (PDF)', url: 'reports/WarBot_SMA.pdf', icon: 'fas fa-file-lines' },
+      { text: 'View GitHub Repository', url: 'https://github.com/dhiaelhakmokhtari/Multi-Agent-Systems-Autonomous-Coordination', icon: 'fab fa-github', btnClass: 'btn-secondary' }
     ]
   },
 
@@ -312,7 +315,8 @@ const caseStudies = {
       }
     ],
     links: [
-      { text: 'View GitHub Repository', url: 'https://github.com/dhiaelhakmokhtari/SARSA-vs-QLearning-Blackjack', icon: 'fab fa-github' }
+      { text: 'Read Benchmark Report (PDF)', url: 'reports/RL_Black_Jack.pdf', icon: 'fas fa-file-lines' },
+      { text: 'View GitHub Repository', url: 'https://github.com/dhiaelhakmokhtari/SARSA-vs-QLearning-Blackjack', icon: 'fab fa-github', btnClass: 'btn-secondary' }
     ]
   },
 
@@ -427,7 +431,8 @@ function openCaseStudy(projectId) {
       if (l.disabled) {
         footerHtml += `<span class="btn btn-ghost" style="opacity:0.6; cursor:default;"><i class="${l.icon}"></i> ${l.text}</span>`;
       } else {
-        footerHtml += `<a href="${l.url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="${l.icon}"></i> ${l.text}</a>`;
+        const cls = l.btnClass || 'btn-primary';
+        footerHtml += `<a href="${l.url}" target="_blank" rel="noopener noreferrer" class="btn ${cls}"><i class="${l.icon}"></i> ${l.text}</a>`;
       }
     });
   }
